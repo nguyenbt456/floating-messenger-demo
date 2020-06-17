@@ -4,8 +4,8 @@
   "description": "Floating Facebook Messenger app on Chrome",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./src/app.js",
-    "test": "mocha ./src/test"
+    "dev": "nodemon app.js",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nguyenbt456/floating-messenger-demo/issues"
+  },
+  "engines": {
+    "node": "10.18.1"
   },
   "homepage": "https://github.com/nguyenbt456/floating-messenger-demo#readme",
   "devDependencies": {

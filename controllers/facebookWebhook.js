@@ -10,7 +10,7 @@ function getWebhookAuthentication(req, res) {
 }
 
 function postWebhook(req, res) {
-    console.log("Webhok Data: ",req.body)
+    console.log("Webhook Data: ", req.body)
 }
 
 module.exports = {
