@@ -1,7 +1,7 @@
 FROM node:12.18-alpine
 
 # Set the working directory
-WORKDIR /go/src/github.com/nguyenbt456/floating-messenger-demo/src
+WORKDIR /go/src/github.com/nguyenbt456/floating-messenger-demo
 
 # Copy app dependencies
 COPY package*.json ./

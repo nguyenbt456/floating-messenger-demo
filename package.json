@@ -4,8 +4,8 @@
   "description": "Floating Facebook Messenger app on Chrome",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./src/app.js",
-    "test": "mocha ./src/test"
+    "dev": "nodemon app.js",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
