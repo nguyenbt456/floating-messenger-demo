@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/nguyenbt456/floating-messenger-demo/issues"
   },
+  "engines": {
+    "node": "10.18.1"
+  },
   "homepage": "https://github.com/nguyenbt456/floating-messenger-demo#readme",
   "devDependencies": {
     "nodemon": "^2.0.4"
