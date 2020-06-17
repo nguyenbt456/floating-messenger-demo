@@ -10,6 +10,7 @@ app.set('views', __dirname + '/public');
 app.set('view engine', 'ejs');
 
 app.use(morgan('dev'));
+app.use(require('body-parser').json())
 app.use(require('express-session')({secret: 'keyboard cat', resave: true, saveUninitialized:true}));
 
 require('./controllers/facebookLogin').passportInitialize(app)
