@@ -1,0 +1,14 @@
+version: '3'
+services:
+    floating-messenger-demo:
+        image: 'https://hub.docker.com/repository/docker/nguyenbt456/floating-messenger-demo'
+        restart: always
+        port:
+            - "9990:9990"
+        env_file:
+            - test.env
+
+networks:
+    default:
+        external:
+            name: floating-messenger
