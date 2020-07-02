@@ -19,7 +19,5 @@ script:
     - docker build -t ffm .
 
 after_success:
-    - echo $DOCKER_USER
-    - echo $DOCKER_PASSWORD
-    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin
     - docker push $DOCKER_USER/ffm
