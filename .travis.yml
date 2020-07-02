@@ -16,7 +16,7 @@ before_script:
     
 script:
     - npm test
-    - docker build -t ffm .
+    - docker build -t $DOCKER_USER/ffm .
 
 after_success:
     - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin
